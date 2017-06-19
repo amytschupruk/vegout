@@ -165,7 +165,6 @@ header {
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 90px;
     margin: 0;
-    margin-bottom: 25px;
     font-weight: bolder;
     z-index: 5;
     letter-spacing: 2px; }
@@ -235,7 +234,8 @@ p {
   position: relative;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  background-color: #222; }
+  background-color: #222;
+  margin-top: 25px; }
 
 .loading {
   display: none;
