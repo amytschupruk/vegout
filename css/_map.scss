@@ -1,0 +1,105 @@
+#mapContainer {
+	height: 70vh;
+	position: relative;
+	animation-duration: 1s;
+	background-color: #222;
+}
+
+// ***** Loading Styles *****
+.loading { 
+	display: none;
+ 	z-index: 1000;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	background-color: rgba(182, 227, 85, 0);
+ 	opacity: 0;
+ 	position: absolute;
+ 	animation-duration: 1s;
+ 	.loading-icon {
+ 		display: flex;
+ 		justify-content: center;
+ 		align-content: center;
+ 		height: 100%;
+ 			div {
+ 			height: 200px;	
+ 			align-self: center;
+		 		img {
+		 			width: 125px;
+		 			animation-duration: 2s;
+		 			opacity: 1;
+		 			margin-bottom: 15px;
+		 		}
+		 		p {
+		 			animation-duration: 3s;
+		 			margin: 0;
+		 			font-family: 'PT Sans', sans-serif;
+		 		}	
+ 			}
+ 	}
+}
+
+
+// ****** Leaflet popup styles ******
+
+
+.leaflet-popup-content {
+	width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5px;
+		a {
+			text-decoration: none;
+			h2 {
+				margin: 0;
+				font-family: 'Ubuntu Condensed', sans-serif;
+				color: #228942;
+			}
+			h2:hover {
+				color: #a5d049;
+			}
+			p.cuisine {
+				color: #228942;
+			}
+			p {
+				margin: 0;
+				color: #5C3A53;
+				font-family: 'PT Sans', sans-serif;
+				font-size: 14px;
+				letter-spacing: 0px;
+			}
+		}
+		a:hover {
+			color: #5C3A53;
+		}
+}
+
+
+.image-popup {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	transition: all ease 0.3s;
+}
+
+.image-popup:hover {
+	opacity: 0.5;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.loading .loading-icon div img {
+		width: 100px;
+	}
+}
+
+
+
+
+
+
+
+

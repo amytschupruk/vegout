@@ -1,0 +1,62 @@
+
+.intro-container {
+	height: 80vh;
+}
+
+.intro-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	padding-bottom: 20%;
+	text-align: center;
+		h2 {
+			color: white;
+			font-family: 'PT Sans', sans-serif;
+			letter-spacing: 2px;
+			font-size: 40px;
+		}
+}
+
+
+
+form p {
+	box-shadow: 0px 2px 10px #222222;
+	padding: 20px 30px;
+	cursor: pointer;
+	background-color: #5C3A53;
+	transition: 0.5s all ease;
+} 
+
+form p:hover {
+	background-color: #7F71A4;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.intro-text {
+		height: 85%;
+	}
+	.intro-text h2 {
+		font-size: 30px;
+		padding: 0px 20px;
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.intro-text h2 {
+		font-size: 25px;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.intro-text h2 {
+		font-size: 25px;
+	}
+}
+

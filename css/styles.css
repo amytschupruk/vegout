@@ -1,0 +1,391 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  padding: 2.5% 7%;
+  padding-bottom: 0;
+  background-color: #a5d049; }
+
+.wrapper {
+  position: relative;
+  overflow: hidden; }
+  .wrapper .background-leaf {
+    position: absolute;
+    top: 0;
+    right: -100;
+    bottom: -150;
+    display: inline;
+    z-index: -1; }
+
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  header h1 {
+    color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 90px;
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: bolder;
+    z-index: 5;
+    letter-spacing: 2px; }
+  header img {
+    position: absolute;
+    top: 0;
+    right: -100;
+    bottom: -150;
+    display: inline;
+    z-index: -1;
+    overflow: hidden; }
+
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left; }
+  footer div {
+    -webkit-align-self: left;
+    -ms-flex-item-align: left;
+    align-self: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    footer div img {
+      max-width: 125px;
+      margin-top: 10px;
+      display: inline-block; }
+    footer div p {
+      font-size: 16px;
+      margin-bottom: 0; }
+  footer p.copyright {
+    font-size: 14px;
+    margin-top: 0px; }
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }
+
+#mapContainer {
+  height: 70vh;
+  position: relative;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  background-color: #222; }
+
+.loading {
+  display: none;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(182, 227, 85, 0);
+  opacity: 0;
+  position: absolute;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+  .loading .loading-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    height: 100%; }
+    .loading .loading-icon div {
+      height: 200px;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center; }
+      .loading .loading-icon div img {
+        width: 125px;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        opacity: 1;
+        margin-bottom: 15px; }
+      .loading .loading-icon div p {
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        margin: 0;
+        font-family: 'PT Sans', sans-serif; }
+
+.leaflet-popup-content {
+  width: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5px; }
+  .leaflet-popup-content a {
+    text-decoration: none; }
+    .leaflet-popup-content a h2 {
+      margin: 0;
+      font-family: 'Ubuntu Condensed', sans-serif;
+      color: #228942; }
+    .leaflet-popup-content a h2:hover {
+      color: #a5d049; }
+    .leaflet-popup-content a p.cuisine {
+      color: #228942; }
+    .leaflet-popup-content a p {
+      margin: 0;
+      color: #5C3A53;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 14px;
+      letter-spacing: 0px; }
+  .leaflet-popup-content a:hover {
+    color: #5C3A53; }
+
+.image-popup {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s; }
+
+.image-popup:hover {
+  opacity: 0.5; }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .loading .loading-icon div img {
+    width: 100px; } }
+
+.intro-container {
+  height: 80vh; }
+
+.intro-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 20%;
+  text-align: center; }
+  .intro-text h2 {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px; }
+
+form p {
+  -webkit-box-shadow: 0px 2px 10px #222222;
+  box-shadow: 0px 2px 10px #222222;
+  padding: 20px 30px;
+  cursor: pointer;
+  background-color: #5C3A53;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
+
+form p:hover {
+  background-color: #7F71A4; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .intro-text {
+    height: 85%; }
+  .intro-text h2 {
+    font-size: 30px;
+    padding: 0px 20px; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .intro-text h2 {
+    font-size: 25px; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .intro-text h2 {
+    font-size: 25px; } }

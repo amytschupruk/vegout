@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- *** viewport meta tag *** -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- *** Leaflet CSS CDN *** -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+  integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+  crossorigin=""/>
+  <!-- *** font awesome CDN *** -->
+  	<script src="https://use.fontawesome.com/382633b333.js"></script>
+  	<!-- *** Google Fonts CDN *** -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|PT+Sans" rel="stylesheet">
+   <!--  *** Animate CSS CDN *** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+   <!--  *** CSS Stylesheet *** -->
+    <link rel="stylesheet" href="css/styles.css">
+
+	<title>Veg Out</title>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- *** Background Leaf SVG *** -->
+		<img src="assets/leaf.svg" alt="green leaf" class="background-leaf animated fadeInUp">
+
+		<header>
+			<h1>Veg Out</h1>
+		</header>
+
+		<main>
+			<!-- *** "intro container" when user arrives at screen *** -->
+			<section class="intro-container animated">
+				<div class="intro-text">
+					<h2>Find veggie-friendly restaurants near you!</h2>
+					<form>
+						<p class="find-restaurants geolocation hvr-fade" role="button">Find Restaurants</p>
+					</form>
+				</div>
+			</section>
+			<!-- *** intro container end *** -->
+		<!-- 	*** Map container(loads in after user accepts geolocation tracking) **** -->
+			 <section id="mapContainer" class="mapContainer hidden animated fadeInUp">
+				<!-- **** loading section open ***** -->
+				<div class="loading animated fadeInUp">
+					<div class="loading-icon">
+						<div>
+						<img src="assets/eggplant.svg" alt="leaf" class="animated infinite bounce">
+						<p class="loading-text animated infinite flash">Loading...</p>
+						</div>
+					</div>	
+				</div>
+				<!-- 	**** loading section close ***** -->
+			 </section>
+		<!-- *** Map container end *** -->
+		</main>
+
+		<footer>
+			<div>
+				<p>Powered by:</p>
+				<img src="assets/zomato-developers-logo.png" alt="">
+				<img src="assets/leafletlogo.png" alt="">
+			</div>
+			<p class="copyright">&copy;2017 Veggie Eats</p>
+		</footer>
+	</div>
+
+<!-- *** Jquery CDN *** -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- *** Leaflet JS CDN *** -->
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+  integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+  crossorigin=""></script>
+<!-- *** Link to JS file *** -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
